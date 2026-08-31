@@ -1,16 +1,21 @@
-# React + Vite
+# EduTrack / Aura - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend del Sistema de Gestión de Trayectorias Escolares — Instituto Superior de Formación Docente y Técnica Nº 166 (ISFDyT Nº 166, Tandil).
 
-Currently, two official plugins are available:
+## Licencia
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este proyecto está licenciado bajo la **GNU Affero General Public License v3.0 (AGPLv3)**. Consulta el archivo `LICENSE` para más detalles.
 
-## React Compiler
+```text
+Copyright (C) 2026 Instituto Superior de Formación Docente y Técnica Nº 166 (ISFDyT Nº 166 - Tandil)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+```

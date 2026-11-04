@@ -14,7 +14,9 @@ import StudentTrajectoryPage from '@/pages/StudentTrajectoryPage'
 import IntensificationCalendarPage from '@/pages/IntensificationCalendarPage'
 import OrganizationalModelPage from '@/pages/OrganizationalModelPage'
 import InterventionFormPage from '@/pages/InterventionFormPage'
-import { USER_MANAGEMENT_ROLES } from '@/services/session'
+import PromotionPage from '@/pages/PromotionPage'
+import { ADMIN_ROLES, USER_MANAGEMENT_ROLES } from '@/services/session'
+import { AcademicYearsProvider } from '@/hooks/useAcademicYears'
 import ProtectedRoute from '@/routes/ProtectedRoute'
 
 const AppRouter = () => {
@@ -37,6 +39,18 @@ const AppRouter = () => {
           <Route path="/intensification-calendar" element={<IntensificationCalendarPage />} />
           <Route path="/organizational-model" element={<OrganizationalModelPage />} />
           <Route path="/interventions/new" element={<InterventionFormPage />} />
+        </Route>
+
+        {/* Promoción: administración y dirección */}
+        <Route element={<ProtectedRoute roles={ADMIN_ROLES} />}>
+          <Route
+            path="/promotion"
+            element={
+              <AcademicYearsProvider>
+                <PromotionPage />
+              </AcademicYearsProvider>
+            }
+          />
         </Route>
 
         {/* Solo administración */}

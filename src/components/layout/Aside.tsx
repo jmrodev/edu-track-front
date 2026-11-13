@@ -26,6 +26,8 @@ import EventRepeatIcon from '@mui/icons-material/EventRepeat'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
 import SettingsIcon from '@mui/icons-material/Settings'
 import GroupsIcon from '@mui/icons-material/Groups'
+import InsightsIcon from '@mui/icons-material/Insights'
+import { EDTE_DASHBOARD_ROLES } from '@/components/edteDashboard/dashboardLabels'
 import { ADMIN_ROLES, getRole, USER_MANAGEMENT_ROLES } from '@/services/session'
 import { EDTE_VIEWER_ROLES } from '@/components/edte/edteLabels'
 
@@ -50,6 +52,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Promoción', icon: <TrendingUpIcon />, path: '/promotion', roles: ADMIN_ROLES },
   { label: 'Modelo organizativo', icon: <SettingsIcon />, path: '/organizational-model' },
   { label: 'Reuniones del EDTE', icon: <GroupsIcon />, path: '/edte-meetings', roles: EDTE_VIEWER_ROLES },
+  { label: 'Dashboard del EDTE', icon: <InsightsIcon />, path: '/edte-dashboard', roles: EDTE_DASHBOARD_ROLES },
 ]
 
 export const Aside: React.FC = () => {
